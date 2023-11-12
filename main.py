@@ -1,9 +1,11 @@
-#zad4.1
-import random
-dlugosc_drogi = random.randint(1, 100000)
-spalanie = float(input("Podaj średnie spalanie (w litrach na 100 km): "))
-cena_paliwa = 6.5
-zuzyte_paliwo = (dlugosc_drogi / 100) * spalanie
-koszty_podrozy = zuzyte_paliwo * cena_paliwa
-print(f"Przewidziane zużycie paliwa: {zuzyte_paliwo:.2f} litrów")
-print(f"Koszty podróży wyniosą: {koszty_podrozy:.2f} zł")
+#zad1
+wiek = int(input("Podaj wiek: "))
+if wiek < 0:
+    print("Niepoprawne dane")
+elif wiek <= 4:
+    print("Wejście za darmo")
+elif wiek <= 18:
+    print("Cena biletu: 10zł")
+else:
+    print("Cena biletu: 20zł")
+
