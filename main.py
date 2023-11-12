@@ -1,18 +1,8 @@
-#zad
-a = float(input("Podaj pierwszą liczbę całkowitą: "))
-b = float(input("Podaj drugą liczbę całkowitą: "))
-if(a>b):
-    k=a
-    p=b
-elif(b>a):
-    k=b
-    p=a
-else:
-    print("Nie mogę obliczyć liczb")
-if a != b:
-    while p<=k:
-        print(p)
-        p+=1
-else:
-    print("Koniec!")
-
+#zad2
+p=-4
+k=4
+skok=0.5
+while p<=k:
+    y=2*p**2-5*p-8
+    print("Dla x= ", p, "rozwiązanie wynosi: ", y)
+    p+=skok
