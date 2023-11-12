@@ -1,36 +1,19 @@
-#zad2
-def dodawanie(a, b):
-    return a + b
-def odejmowanie(a, b):
-    return a - b
-def mnozenie(a, b):
-    return a * b
-def dzielenie(a, b):
-    if b != 0:
-        return a / b
+#zad3
+a = float(input("Podaj współczynnik a: "))
+b = float(input("Podaj współczynnik b: "))
+c = float(input("Podaj współczynnik c: "))
+delta = b**2 - 4*a*c
+print("Delta: ", delta)
+if a != 0:
+    if delta < 0:
+        print("Równanie nie ma rozwiązań")
+    elif delta > 0:
+            x1 = (-b + delta**(1/2)) / (2*a)
+            x2 = (-b - delta**(1/2)) / (2*a)
+            print("Równanie ma dwa rozwiązania: ", x1, x2)
     else:
-        return "Błąd: Dzielenie przez zero"
-def potegowanie(a, b):
-    return a ** b
-print("Jaką operację chcesz wykonać?")
-print("1) dodawanie")
-print("2) odejmowanie")
-print("3) mnożenie")
-print("4) dzielenie")
-print("5) potęgowanie")
-operacja = int(input("Wpisz numer operacji: "))
-arg1 = float(input("Podaj argument 1: "))
-arg2 = float(input("Podaj argument 2: "))
-if operacja == 1:
-    wynik = dodawanie(arg1, arg2)
-elif operacja == 2:
-    wynik = odejmowanie(arg1, arg2)
-elif operacja == 3:
-    wynik = mnozenie(arg1, arg2)
-elif operacja == 4:
-    wynik = dzielenie(arg1, arg2)
-elif operacja == 5:
-    wynik = potegowanie(arg1, arg2)
+        x = -c/b
+        print("Równanie ma jedno rozwiązanie: ", x)
 else:
-    wynik = "Błąd: nieprawidłowy numer operacji"
-print("Wynik:", wynik)
+    x = -c/b
+    print("Równanie nie jest kwadratowe i ma dwa rozwiązanie: ", x)
