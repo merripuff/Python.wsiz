@@ -1,12 +1,18 @@
-#zad4
-x = float(input("Podaj pierwszą liczbę (x): "))
-y = float(input("Podaj drugą liczbę (y): "))
-z = float(input("Podaj trzecią liczbę (z): "))
-if x > y:
-    x, y = y, x
-if y > z:
-    y, z = z, y
-if x > y:
-    x, y = y, x
-print("Liczby posortowane od najmniejszej do największej:")
-print(x, y, z)
+#zad1
+a = float(input("Podaj pierwszą liczbę całkowitą: "))
+b = float(input("Podaj drugą liczbę całkowitą: "))
+if(a>b):
+    k=a
+    p=b
+elif(b>a):
+    k=b
+    p=a
+else:
+    print("Nie mogę obliczyć liczb")
+if a != b:
+    while p<=k:
+        print(p)
+        p+=1
+else:
+    print("Koniec")
+
