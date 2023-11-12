@@ -1,4 +1,4 @@
-#zad1
+#zad
 a = float(input("Podaj pierwszą liczbę całkowitą: "))
 b = float(input("Podaj drugą liczbę całkowitą: "))
 if(a>b):
@@ -14,5 +14,5 @@ if a != b:
         print(p)
         p+=1
 else:
-    print("Koniec")
+    print("Koniec!")
 
