@@ -32,5 +32,5 @@ elif operacja == 4:
 elif operacja == 5:
     wynik = potegowanie(arg1, arg2)
 else:
-    wynik = "Błąd: Nieprawidłowy numer operacji"
+    wynik = "Błąd: nieprawidłowy numer operacji"
 print("Wynik:", wynik)
