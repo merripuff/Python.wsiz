@@ -1,5 +1,8 @@
-a=int(input("Podaj liczbę linij i gwiazdek: "))
-for i in range(a):
-    for gwiazdka in range(a):
-         print("*", end="")
-    print()
+a=int(input("Podaj wysokość choinki: "))
+for i in range(1, a + 1):
+    print("* " * i)
+
+a=int(input("Podaj wysokość choinki: "))
+for i in range(1, a + 1):
+    print(" " * (a - i) + "* " * i)
+
