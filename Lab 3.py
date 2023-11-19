@@ -1,4 +1,8 @@
-tekst = "Rzeszów jest piękny"
-print("Pierwsza litera:", tekst[0])
-
-print("Siódma, dziesiąta, trzynasta oraz druga litera:", tekst[6], tekst[9], tekst[12], tekst[1])
+tekst = "Python jest super"
+print("Zerowy indeks:", tekst[0])
+print("Ostatni indeks:", tekst[-1])
+print("Co drugi, zaczynając od zerowego:", tekst[0:18:2])
+co_trzeci_pierwszy = tekst[1::3]
+print("Co trzeci zaczynając od pierwszego:", tekst[1:18:3])
+print("Od dziesiątego do ostatniego:", tekst[9:18])
+print("Od końca do początku:", tekst[::-1])
