@@ -1,9 +1,4 @@
-dane = int(input("Wprowadź liczbę całkowitą: "))
-while True:
-    if dane >= 0:
-        print("To jest liczba")
-    else:
-        print(f"Pierwiastek kwadratowy z {dane} wynosi: {0.5*dane}")
-        print("Dziękujemy za skorzystanie z naszej aplikacji")
-    break
-    print("Wprowadź poprawną liczbę całkowitą.")
+tekst = "Rzeszów jest piękny"
+print("Pierwsza litera:", tekst[0])
+
+print("Siódma, dziesiąta, trzynasta oraz druga litera:", tekst[6], tekst[9], tekst[12], tekst[1])
