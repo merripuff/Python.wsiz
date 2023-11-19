@@ -1,11 +1,10 @@
-number = int(input("Podaj liczbę naturalną: "))
-def s(n):
-    if n == 0 or n == 1:
-        return 1
+dane = int(input("Wprowadź liczbę całkowitą: "))
+while True:
+    if dane >= 0:
+        print("To jest liczba")
+        continue
     else:
-        return n * s(n - 1)
-if number < 0:
-    print("Podana liczba jest mniejszą od zera. Silnia nie istnieje dla liczb ujemnych.")
-else:
-    result = s(number)
-    print(f"Silnia liczby {number} wynosi: {result}")
+        print(f"Pierwiastek kwadratowy z {dane} wynosi: {0.5*dane}")
+        print("Dziękujemy za skorzystanie z naszej aplikacji")
+    break
+    print("Wprowadź poprawną liczbę całkowitą.")
