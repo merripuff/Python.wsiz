@@ -1,3 +1,5 @@
-for i in range(20, -1, -2):
-    print(i)
-
+a=int(input("Podaj liczbę linij i gwiazdek: "))
+for i in range(a):
+    for gwiazdka in range(a):
+         print("*", end="")
+    print()
