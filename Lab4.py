@@ -1,6 +1,16 @@
-tekst ="Python test super"
-print("a)", tekst[0], tekst[-1])
-print("b)", tekst[0::2])
-print("c)", tekst[1::3])
-print("d)", tekst[10:])
-print("e)", tekst[::-1])
+imię = input("Podaj swoje imię: ")
+print("Witaj, ", imię)
+
+wiek = input("Podaj swój wiek: ")
+print("Twój wiek to: ", wiek)
+
+nazwisko = input("Podaj nazwisko: ")
+print("Twoje iniciały: ", imię[0], nazwisko[0])
+
+łańcuch = input("Podaj łańcuch: ")
+łańcuchx5 = łańcuch*5
+print(łańcuchx5)
+drugi_łańcuch = input("Podaj drugi łańcuch: ")
+print(łańcuch, drugi_łańcuch)
+
+
