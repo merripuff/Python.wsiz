@@ -1,5 +1,9 @@
-def odwroc_string(tekst):
-    return tekst[::-1]
-przyklad_string = "Hello, World!"
-odwrocony_string = odwroc_string(przyklad_string)
-print(odwrocony_string)
+def potega(a, n):
+    p = a**n
+    if n == 0:
+        print(1)
+    elif n < 0:
+        print(1/p)
+    else:
+        print(p)
+potega(a=2, n=-2)
