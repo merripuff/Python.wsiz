@@ -1,4 +1,4 @@
-def pole(r):
-    pole_koła= 3.14 * r*r
-    print("Pole koła=", pole_koła)
-pole(2)
+def pole(a,b,h):
+    pole_t= h*(a+b)/2
+    print("Pole=", pole_t)
+pole(a=4, b=5, h=2)
