@@ -1,4 +1,4 @@
-def pole(a,b,h):
-    pole_t= h*(a+b)/2
-    print("Pole=", pole_t)
-pole(a=4, b=5, h=2)
+def dane(imie, wiek=20):
+    print(f"Imię: {imie}, Wiek: {wiek}")
+dane("Anna", 25)
+dane("Jan")
