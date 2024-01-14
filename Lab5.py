@@ -1,4 +1,6 @@
-def dane(imie, wiek=20):
-    print(f"Imię: {imie}, Wiek: {wiek}")
-dane("Anna", 25)
-dane("Jan")
+def liczba(x):
+    if x<0:
+        print("Liczba x jest ujemna")
+    else:
+        print( "Liczba x lest dodatnia")
+liczba(12)
