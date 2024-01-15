@@ -124,3 +124,4 @@ h1 = one[:len(one)//2]
 h2 = two[len(two)//2:]
 three = h1 + h2
 print("Połączone połowy:", three)
+
