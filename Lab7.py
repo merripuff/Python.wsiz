@@ -5,6 +5,7 @@ data = {'Imię': ['Anna', 'Jan', 'Katarzyna', 'Tomasz'],
         'ocena_z_kolokwium': [3, 3.5, 4, 3]}
 data1 = {'nr_albumu': [70593, 70429, 70237, 70594],
         'ocena_z_kolokwium_popr': [4.5, 5, 4.5, 3.5]}
+
 df = pd.DataFrame(data)
 df1 = pd.DataFrame(data1)
 
@@ -19,6 +20,8 @@ merged_df = pd.merge(df, df1, on='nr_albumu', how='left')
 merged_df.to_csv('merged_data.csv')
 
 loaded_df = pd.read_csv('merged_data.csv')
+
+unikalne_oceny = df['ocena_z_kolokwium'].unique()
 
 print(df)
 
@@ -38,3 +41,6 @@ print("\nPlik CSV został pomyślnie zapisany.")
 
 print("\nWczytane dane:")
 print(loaded_df.head())
+
+print("Unikalne oceny:")
+print(unikalne_oceny)
