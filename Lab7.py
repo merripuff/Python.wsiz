@@ -2,7 +2,7 @@ import pandas as pd
 data = {'Imię': ['Anna', 'Jan', 'Katarzyna', 'Tomasz'],
         'nazwisko': ['Nowak', 'Kowalski', 'Wiśniewska', 'Jankowski'],
         'nr_albumu': [70593, 70429, 70237, 70594],
-        'ocena_z_kolokwium': [3, 3.5, 4, 3]}
+        'ocena_z_kolokwium': [4, 3.5, 4, 3]}
 data1 = {'nr_albumu': [70593, 70429, 70237, 70594],
         'ocena_z_kolokwium_popr': [4.5, 5, 4.5, 3.5]}
 
@@ -23,6 +23,8 @@ loaded_df = pd.read_csv('merged_data.csv')
 
 unikalne_oceny = df['ocena_z_kolokwium'].unique()
 
+liczba_ocen_5 = df1['ocena_z_kolokwium_popr'].value_counts().get(5)
+
 print(df)
 
 print("\nStudenci z oceną większą niż 4:")
@@ -42,5 +44,7 @@ print("\nPlik CSV został pomyślnie zapisany.")
 print("\nWczytane dane:")
 print(loaded_df.head())
 
-print("Unikalne oceny:")
+print("\nUnikalne oceny:")
 print(unikalne_oceny)
+
+print("\nLiczba studentów z oceną równą 5:", liczba_ocen_5)
