@@ -18,6 +18,8 @@ merged_df = pd.merge(df, df1, on='nr_albumu', how='left')
 
 merged_df.to_csv('merged_data.csv')
 
+loaded_df = pd.read_csv('merged_data.csv')
+
 print(df)
 
 print("\nStudenci z oceną większą niż 4:")
@@ -33,3 +35,6 @@ print("\nPołączona ramka danych:")
 print(merged_df)
 
 print("\nPlik CSV został pomyślnie zapisany.")
+
+print("\nWczytane dane:")
+print(loaded_df.head())
